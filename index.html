@@ -1,225 +1,336 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Спортик</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="header__container">
-          <a class="header__logo" href="#hero">
-            <img src="images/logo.svg" alt="Логотипчик" />
-          </a>
-          <button type="button" class="header__burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <nav class="header__nav">
-            <ul class="header__menu">
-              <li class="header__item">
-                <a href="#benefits" class="header__link">Польза</a>
-              </li>
-              <li class="header__item">
-                <a href="#quote" class="header__link">Упорство</a>
-              </li>
-              <li class="header__item">
-                <a href="#important" class="header__link">Важное</a>
-              </li>
-              <li class="header__item">
-                <a href="#sports" class="header__link">Виды</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__search search-header">
-            <button type="button" class="search-header__button">
-              <img src="images/search.svg" alt="Поиск" />
-            </button>
-            <form action="#" class="search-header__form">
-              <input
-                type="text"
-                placeholder="Поиск"
-                class="search-header__input"
-              />
-              <button type="submit" class="search-header__submit">
-                <img src="images/search.svg" alt="Поиск" />
-              </button>
-            </form>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Главная</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <button type="button" class="header__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__item">
+            <span class="header__link disable">Главная</span>
+          </li>
+          <li class="header__item">
+            <a href="become-author.html" class="header__link">Стать автором</a>
+          </li>
+          <li class="header__item">
+            <a href="contacts.html" class="header__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <form action="#" class="header__search search-header">
+        <input type="search" class="search-header__input" placeholder="Что ищем" />
+        <button type="submit" class="search-header__button">Да</button>
+      </form>
+    </div>
+  </header>
+  <main class="page">
+    <section class="page__hero hero">
+      <div class="hero__container">
+        <h1 class="hero__title">Свежие новости</h1>
+        <div class="hero__content">
+          <div class="hero__slider-wrapper">
+            <div class="hero__slider slider-hero swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <a href="#" class="swiper-slide slider-hero__slide">
+                  <h2 class="slider-hero__title">
+                    Для велосипедистов открылась новая трасса за городом —
+                    живописный маршрут длиной 25 км с умеренным рельефом.
+                    Дорога уже пользуется популярностью среди как начинающих,
+                    так и опытных райдеров. Это отличное место для тренировок
+                    на выносливость и просто активного отдыха на природе.
+                  </h2>
+                  <img class="slider-hero__img" src="images/slides/slide1.webp" alt="Бег" />
+                </a>
+                <a href="#" class="swiper-slide slider-hero__slide">
+                  <h2 class="slider-hero__title">
+                    В студиях наблюдается рост интереса к пилатесу, особенно
+                    среди тех, кто проводит много времени за компьютером. Эти
+                    тренировки помогают улучшить осанку, снять мышечное
+                    напряжение и укрепить мышцы корпуса. Всё больше новичков
+                    выбирают пилатес как мягкий, но эффективный способ
+                    вернуться в форму.
+                  </h2>
+                  <img class="slider-hero__img" src="images/slides/slide2.webp" alt="Бег" />
+                </a>
+                <a href="#" class="swiper-slide slider-hero__slide">
+                  <h2 class="slider-hero__title">
+                    Прошлая неделя порадовала любителей бега: на региональных
+                    соревнованиях сразу несколько молодых спортсменов улучшили
+                    личные рекорды. Особенно ярко проявили себя участники в
+                    спринтерских дисциплинах и на средних дистанциях.
+                  </h2>
+                  <img class="slider-hero__img" src="images/slides/slide3.webp" alt="Бег" />
+                </a>
+              </div>
+            </div>
+            <div class="swiper-button-prev">
+              <img src="images/icons/button_prev.png" alt="Слайд назад" />
+            </div>
+            <div class="swiper-button-next">
+              <img src="images/icons/button_next.png" alt="Слайд вперед" />
+            </div>
+          </div>
+          <div class="hero__images">
+            <a title="Twitter" href="#"><img src="images/bird.webp" alt="Twitter" /></a>
+            <a title="RSS" href="#"><img src="images/man.webp" alt="RSS" /></a>
           </div>
         </div>
-      </header>
-      <main>
-        <section id="hero" class="hero">
-          <div class="hero__container">
-            <h1 class="hero__title">
-              Твой выбор — движение вперёд. Спорт, который вдохновляет
-            </h1>
-            <p class="hero__text">
-              Тренируйся, развивайся, вдохновляйся — каждый день становится
-              шагом к цели. Всё для тех, кто выбирает движение.
-            </p>
-          </div>
-        </section>
-        <section id="benefits" class="benefits">
-          <div class="benefits__container">
-            <h2 class="benefits__title title">Польза спорта</h2>
-
-            <div class="benefits__items">
-              <div class="benefits__item">
-                <p>
-                  Спорт играет ключевую роль в регулировании массы тела.
-                  Регулярные тренировки помогают сжигать калории, поддерживать
-                  мышечную массу и ускорять обмен веществ.
-                </p>
-                <div class="benefits_name">Контроль веса</div>
-              </div>
-              <div class="benefits__item">
-                <p>
-                  Занятия спортом, особенно направленные на укрепление мышц
-                  спины, пресса и шеи, помогают формировать правильную осанку и
-                  предотвращать искривления позвоночника.
-                </p>
-                <div class="benefits_name">Коррекция осанки</div>
-              </div>
-              <div class="benefits__item">
-                <p>
-                  Физическая активность оказывает мощное положительное
-                  воздействие на психику. При занятиях спортом в организме
-                  вырабатываются эндорфины — «гормоны счастья», которые улучшают
-                  настроение и снижают уровень тревожности и стресса.
-                </p>
-                <div class="benefits_name">Психологическое здоровье</div>
-              </div>
-              <div class="benefits__item">
-                <p>
-                  Физическая активность помогает организму лучше справляться с
-                  инфекциями. Умеренные тренировки улучшают циркуляцию крови и
-                  лимфы, что способствует более эффективной транспортировке
-                  иммунных клеток по всему телу.
-                </p>
-                <div class="benefits_name">Укрепление иммуннитета</div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="sports" class="sports section">
-          <div class="sports__container">
-            <h2 class="sports__title title">Некоторые виды спорта</h2>
-            <div class="sports__items">
-              <div class="sports__item">
-                <div class="sports__img">
-                  <img src="images/sports/01.webp" alt="Бокс" />
-                </div>
-                <div class="sports__text">
-                  <p>
-                    Бокс — это мощный способ развить силу, выносливость и
-                    уверенность в себе. Он помогает снять стресс и укрепить
-                    тело.
-                  </p>
-                </div>
-              </div>
-              <div class="sports__item">
-                <div class="sports__img">
-                  <img src="images/sports/03.webp" alt="Плаванье" />
-                </div>
-                <div class="sports__text">
-                  <p>
-                    Плавание укрепляет всё тело, улучшает дыхание и снимает
-                    напряжение. Это полезный и щадящий спорт для людей любого
-                    возраста.
-                  </p>
-                </div>
-              </div>
-              <div class="sports__item">
-                <div class="sports__img">
-                  <img src="images/sports/02.webp" alt="Йога" />
-                </div>
-                <div class="sports__text">
-                  <p>
-                    Йога улучшает гибкость, осанку и дыхание, помогает
-                    расслабиться и справиться со стрессом. Это гармония тела и
-                    разума.
-                  </p>
-                </div>
-              </div>
-              <div class="sports__item">
-                <div class="sports__img">
-                  <img src="images/sports/04.webp" alt="Силовые тренировки" />
-                </div>
-                <div class="sports__text">
-                  <p>
-                    Силовые тренировки укрепляют мышцы, улучшают осанку и
-                    ускоряют обмен веществ. Они делают тело сильным и
-                    выносливым.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="quote" class="quote">
-          <div class="quote__container">
-            <div class="quote__column">
-              <h2 class="quote__title title">
-                Тренировки делают сильнее — не медали, а преодоление
+      </div>
+    </section>
+    <section class="page__posts posts">
+      <div class="posts__container">
+        <div class="posts__wrapper wrapper">
+          <div class="posts__block">
+            <div class="posts__content">
+              <h2 class="posts__title">
+                <a href="#">Здоровый сон — лучший тренировочный партнёр</a>
               </h2>
-              <blockquote class="quote__text">
-                «Сила не приходит от побед. Ваши усилия развивают силу. Когда вы
-                проходите через трудности и решаете не сдаваться — вот это
-                сила.»
-              </blockquote>
-              <cite class="quote__author">— Арнольд Шварценеггер</cite>
+              <div class="post__text">
+                <p>
+                  Недосып снижает выносливость и замедляет восстановление.
+                  Даже при активных тренировках тело не прогрессирует без
+                  полноценного сна. Старайтесь спать не менее 7–8 часов,
+                  особенно в дни с физической нагрузкой.
+                </p>
+              </div>
+              <div class="post__options">
+                <time datetime="2025-06-05">12.06.2025</time>
+                <span>Юлия Бакум</span>
+                <a href="#">Здоровье</a>
+              </div>
             </div>
-            <div class="quote__img">
-              <img src="images/arnold.webp" alt="Арни" />
+            <div class="posts__content">
+              <h2 class="posts__title">
+                <a href="#">Не бегай на прямых ногах</a>
+              </h2>
+              <div class="post__text">
+                <p>
+                  При беге важно слегка сгибать колени — это снижает ударную
+                  нагрузку на суставы и предотвращает травмы. Следи за
+                  приземлением на середину стопы и старайся держать корпус
+                  слегка наклонённым вперёд.
+                </p>
+              </div>
+              <div class="post__options">
+                <time datetime="2025-06-05">07.06.2025</time>
+                <span>Марианна Бабик</span>
+                <a href="#">Техника</a>
+              </div>
+            </div>
+            <a href="#" class="posts__banner banner-post">
+              <h3 class="banner-post__title">
+                Готовы изменить своё тело и самочувствие? Узнай, с чего
+                начать: упражнения, питание, режим — всё просто и по шагам.
+              </h3>
+              <span class="banner-post__button">Читать дальше</span>
+            </a>
+            <div class="posts__content">
+              <h2 class="posts__title">
+                <a href="#">Нет времени? Тренируйся 10 минут — это лучше, чем ничего</a>
+              </h2>
+              <div class="post__text">
+                <p>
+                  Короткие тренировки тоже дают результат. Пять подходов по 2
+                  минуты — и ты уже сделал шаг к своей цели. Главное —
+                  регулярность.
+                </p>
+              </div>
+              <div class="post__options">
+                <time datetime="2025-06-05">06.06.2025</time>
+                <span>Михаил Руденко</span>
+                <a href="#">Мотивация</a>
+              </div>
+            </div>
+            <div class="posts__content">
+              <h2 class="posts__title">
+                <a href="#">Пилатес как способ мягкого восстановления</a>
+              </h2>
+              <div class="post__text">
+                <p>
+                  После интенсивной недели тренировок попробуйте пилатес: он
+                  мягко растягивает мышцы, улучшает кровообращение и помогает
+                  телу восстановиться без перегрузки.
+                </p>
+              </div>
+              <div class="post__options">
+                <time datetime="2025-06-05">03.06.2025</time>
+                <span>Максим Кулаков</span>
+                <a href="#">Восстановление</a>
+              </div>
+            </div>
+            <a href="#" class="posts__banner banner-post">
+              <h3 class="banner-post__title">
+                Хотите тренироваться эффективнее и без травм? Откройте для
+                себя правильные техники и советы от экспертов!
+              </h3>
+              <span class="banner-post__button">Читать дальше</span>
+            </a>
+            <div class="posts__content">
+              <h2 class="posts__title">
+                <a href="#">Не пропускай завтрак</a>
+              </h2>
+              <div class="post__text">
+                <p>
+                  Утренний приём пищи запускает обмен веществ и заряжает
+                  энергией. Идеальный завтрак для активного дня — белок +
+                  сложные углеводы, например: яйца с цельнозерновым тостом или
+                  творог с фруктами.
+                </p>
+              </div>
+              <div class="post__options">
+                <time datetime="2025-06-05">26.05.2025</time>
+                <span>Роман Юрченко</span>
+                <a href="#">Питание</a>
+              </div>
+            </div>
+            <div class="posts__content">
+              <h2 class="posts__title">
+                <a href="#">Вода важнее, чем ты думаешь</a>
+              </h2>
+              <div class="post__text">
+                <p>
+                  Даже лёгкое обезвоживание снижает эффективность тренировок и
+                  может вызвать судороги. Пейте воду регулярно в течение дня,
+                  а не только во время активности.
+                </p>
+              </div>
+              <div class="post__options">
+                <time datetime="2025-06-05">15.05.2025</time>
+                <span>Петр</span>
+                <a href="#">Гидратация</a>
+              </div>
             </div>
           </div>
-        </section>
-        <section id="important" class="important section">
-          <div class="important__container">
-            <h2 class="important__title title">Важное</h2>
-            <div class="important__row">
-              <div class="important__column">
-                <p>Правильная техника выполнения упражнений</p>
+          <aside class="posts__aside aside">
+            <form class="aside__search" action="#">
+              <input placeholder="Поиск" class="aside__input" type="search" />
+              <button class="aside__button" type="submit">Искать</button>
+            </form>
+            <div class="aside__items">
+              <div class="aside__item">
+                <h3 class="aside__title">Свежие записи</h3>
+                <div class="aside__post aside__block">
+                  <div class="aside__text">
+                    <a href="#">Как начать бегать весной? Простые советы для
+                      безопасного и комфортного старта после зимы.</a>
+                  </div>
+                </div>
+                <div class="aside__post aside__block">
+                  <div class="aside__text">
+                    <a href="#">Питание для активных. Что есть, чтобы зарядиться
+                      энергией и быстро восстанавливаться?
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div class="important__column">
-                <p>Постепенность нагрузок</p>
+              <div class="aside__item">
+                <h3 class="aside__title">Свежие комментарии</h3>
+                <div class="aside__comment aside__block">
+                  <blockquote class="aside__text">
+                    <a href="#">«Пилатес — просто находка! Ощущаю себя намного лучше и
+                      легче.»</a>
+                    <cite class="aside__author">Юля</cite>
+                  </blockquote>
+                </div>
+                <div class="aside__comment aside__block">
+                  <blockquote class="aside__text">
+                    <a href="#">«Статья про питание реально помогла, теперь тренировки
+                      идут легче.»</a>
+                      <cite class="aside__author">Марианна</cite>
+                  </blockquote>
+                </div>
               </div>
-              <div class="important__column">
-                <p>Восстановление и отдых</p>
+              <div class="aside__item">
+                <h3 class="aside__title">Архивы</h3>
+                <div class="aside__archive aside__block">
+                  <div class="aside__text"><a href="#">Май 2025</a></div>
+                </div>
+                <div class="aside__archive aside__block">
+                  <div class="aside__text"><a href="#">Июнь 2025</a></div>
+                </div>
               </div>
-              <div class="important__column">
-                <p>Разминка и заминка</p>
+              <div class="aside__item">
+                <h3 class="aside__title">Рубрики</h3>
+                <div class="aside__rubriс aside__block">
+                  <div class="aside__text">
+                    <a href="#"> &lt; Питание</a>
+                  </div>
+                </div>
+                <div class="aside__rubriс aside__block">
+                  <div class="aside__text">
+                    <a href="#"> &lt; Здоровье</a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-        <footer class="footer">
-          <div class="footer__container">
-            <div class="footer__text">
-              <p>
-                Спорт — не финиш, а новый старт. Каждая тренировка — это шаг
-                вперёд. Каждое усилие — инвестиция в себя. Пусть сегодняшняя
-                цель станет началом завтрашних побед.
-              </p>
-            </div>
-          </div>
-        </footer>
-      </main>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__content">
+        <div class="footer__text">&copy;2025<span>- sport</span></div>
+      </div>
     </div>
-    <script src="js/script.js"></script>
-  </body>
+  </footer>
+  <!-- кнопка наверх -->
+  <button class="top-button" type="button">
+    <svg class="icon-top" style="enable-background: new 0 0 32 32" version="1.1" viewBox="0 0 32 32"
+      xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <style type="text/css">
+        .st0 {
+          display: none;
+        }
+
+        .st1 {
+          display: inline;
+        }
+
+        .st2 {
+          fill: #0097e2;
+        }
+
+        .st3 {
+          fill: #3a3a3a;
+        }
+      </style>
+      <g class="st0" id="grid" />
+      <g id="icon">
+        <g>
+          <g>
+            <path class="st2"
+              d="M21,16c-0.26,0-0.51-0.1-0.71-0.29L16,11.41l-4.29,4.29c-0.39,0.39-1.02,0.39-1.41,0s-0.39-1.02,0-1.41l5-5     c0.39-0.39,1.02-0.39,1.41,0l5,5c0.39,0.39,0.39,1.02,0,1.41C21.51,15.9,21.26,16,21,16z" />
+          </g>
+        </g>
+        <g>
+          <g>
+            <path class="st2"
+              d="M21,22c-0.26,0-0.51-0.1-0.71-0.29L16,17.41l-4.29,4.29c-0.39,0.39-1.02,0.39-1.41,0s-0.39-1.02,0-1.41l5-5     c0.39-0.39,1.02-0.39,1.41,0l5,5c0.39,0.39,0.39,1.02,0,1.41C21.51,21.9,21.26,22,21,22z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

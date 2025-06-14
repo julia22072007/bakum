@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <button type="button" class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__item">
+              <a href="index.html" class="header__link">Главная</a>
+            </li>
+            <li class="header__item">
+              <a href="become-author.html" class="header__link"
+                >Стать автором</a
+              >
+            </li>
+            <li class="header__item">
+              <span class="header__link disable">Контакты</span>
+            </li>
+          </ul>
+        </nav>
+        <form action="#" class="header__search search-header">
+          <input
+            type="search"
+            class="search-header__input"
+            placeholder="Что ищем"
+          />
+          <button type="submit" class="search-header__button">Да</button>
+        </form>
+      </div>
+    </header>
+    <main class="page">
+      <section class="page__contacts contacts">
+        <div class="contacts__container">
+          <h1 class="contacts__title">Наши контакты</h1>
+          <div class="contacts__wrapper wrapper">
+            <div class="contacts__block">
+              <div class="contacts__map map">
+                <a
+                  href="https://yandex.com/maps/?um=constructor%3A6d27a9f0f899072119d0aae2735bd0dc6f9e52d7900bef77c086288241e4f9cf&amp;source=constructorStatic"
+                  target="_blank"
+                  ><img
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A6d27a9f0f899072119d0aae2735bd0dc6f9e52d7900bef77c086288241e4f9cf&amp;&amp;height=400&amp;lang=en_FR"
+                    alt=""
+                    style="border: 0"
+                /></a>
+              </div>
+              <dl class="contacts__list">
+                <dt>Адрес</dt>
+                <dd>
+                  <address class="contacts__item">
+                    г. Донецк, ул.&nbsp;Артема, д.&nbsp;58
+                  </address>
+                </dd>
+                <dt>Время работы</dt>
+                <dd>
+                  <span class="contacts__item"
+                    ><span>пн-пт 9:00 - 18:00</span></span
+                  >
+                </dd>
+                <dt>Телефон</dt>
+                <dd>
+                  <a
+                    href="tel:+7490000000"
+                    class="contacts__item contacts__item_hover _"
+                  >
+                    <span
+                      ><span class="contacts__phone">+7 495 000-00-00</span>
+                      <span hidden>—</span>
+                    </span></a
+                  >
+                </dd>
+              </dl>
+            </div>
+
+              <aside class="posts__aside aside">
+            <form class="aside__search" action="#">
+              <input placeholder="Поиск" class="aside__input" type="search" />
+              <button class="aside__button" type="submit">Искать</button>
+            </form>
+            <div class="aside__items">
+              <div class="aside__item">
+                <h3 class="aside__title">Свежие записи</h3>
+                <div class="aside__post aside__block">
+                  <div class="aside__text">
+                    <a href="#">Как начать бегать весной? Простые советы для
+                      безопасного и комфортного старта после зимы.</a>
+                  </div>
+                </div>
+                <div class="aside__post aside__block">
+                  <div class="aside__text">
+                    <a href="#">Питание для активных. Что есть, чтобы зарядиться
+                      энергией и быстро восстанавливаться?
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="aside__item">
+                <h3 class="aside__title">Свежие комментарии</h3>
+                <div class="aside__comment aside__block">
+                  <blockquote class="aside__text">
+                    <a href="#">«Пилатес — просто находка! Ощущаю себя намного лучше и
+                      легче.»</a>
+                    <cite class="aside__author">Юля</cite>
+                  </blockquote>
+                </div>
+                <div class="aside__comment aside__block">
+                  <blockquote class="aside__text">
+                    <a href="#">«Статья про питание реально помогла, теперь тренировки
+                      идут легче.»</a>
+                      <cite class="aside__author">Марианна</cite>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="aside__item">
+                <h3 class="aside__title">Архивы</h3>
+                <div class="aside__archive aside__block">
+                  <div class="aside__text"><a href="#">Май 2025</a></div>
+                </div>
+                <div class="aside__archive aside__block">
+                  <div class="aside__text"><a href="#">Июнь 2025</a></div>
+                </div>
+              </div>
+              <div class="aside__item">
+                <h3 class="aside__title">Рубрики</h3>
+                <div class="aside__rubriс aside__block">
+                  <div class="aside__text">
+                    <a href="#"> &lt; Питание</a>
+                  </div>
+                </div>
+                <div class="aside__rubriс aside__block">
+                  <div class="aside__text">
+                    <a href="#"> &lt; Здоровье</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__content">
+          <div class="footer__text">&copy;2025<span>- sport</span></div>
+        </div>
+      </div>
+    </footer>
+      <!-- кнопка наверх -->
+    <button class="top-button" type="button">
+      <svg
+        class="icon-top"
+        style="enable-background: new 0 0 32 32"
+        version="1.1"
+        viewBox="0 0 32 32"
+        xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <style type="text/css">
+          .st0 {
+            display: none;
+          }
+
+          .st1 {
+            display: inline;
+          }
+
+          .st2 {
+            fill: #0097e2;
+          }
+
+          .st3 {
+            fill: #3a3a3a;
+          }
+        </style>
+        <g class="st0" id="grid" />
+        <g id="icon">
+          <g>
+            <g>
+              <path
+                class="st2"
+                d="M21,16c-0.26,0-0.51-0.1-0.71-0.29L16,11.41l-4.29,4.29c-0.39,0.39-1.02,0.39-1.41,0s-0.39-1.02,0-1.41l5-5     c0.39-0.39,1.02-0.39,1.41,0l5,5c0.39,0.39,0.39,1.02,0,1.41C21.51,15.9,21.26,16,21,16z"
+              />
+            </g>
+          </g>
+          <g>
+            <g>
+              <path
+                class="st2"
+                d="M21,22c-0.26,0-0.51-0.1-0.71-0.29L16,17.41l-4.29,4.29c-0.39,0.39-1.02,0.39-1.41,0s-0.39-1.02,0-1.41l5-5     c0.39-0.39,1.02-0.39,1.41,0l5,5c0.39,0.39,0.39,1.02,0,1.41C21.51,21.9,21.26,22,21,22z"
+              />
+            </g>
+          </g>
+        </g>
+      </svg>
+    </button>
+  </body>
+</html>
+<script src="js/script.js"></script>
